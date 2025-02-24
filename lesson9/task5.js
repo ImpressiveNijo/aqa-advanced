@@ -10,6 +10,6 @@ const users = [
     age: 32 
     }
 ]; 
-for (const person of users){
-    console.log(`${person.name}, ${person.age}, ${person.email}`);
+for (const {name, email, age} of users){
+    console.log(`${name}, ${age}, ${email}`);
 }
